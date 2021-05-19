@@ -38,7 +38,7 @@ function Conversation() {
     <div className="conversation">
       <div className="conversation-section">
         <div className="list-container" id="list-container">
-          <div className="conversations-list flex flex-col justify-end items-end">
+          <div className="conversations-list flex flex-col justify-end">
             {conversation.length !== 0 &&
               conversation.map((message, index) => {
                 return (
