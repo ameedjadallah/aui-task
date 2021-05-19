@@ -1,13 +1,53 @@
 .side-panel {
-    background-color: #fff;
-    width: 30%;
-    border-radius: 40px;
-    padding : 2em;
-    margin-left :  2em;
+  background-color: #fff;
+  width: 30%;
+  border-radius: 40px;
+  padding: 2em;
+  margin-left: 1em;
 
-    &.collapsed  {
-        width  : 5%;
-        padding :  2em 0;
-        text-align: center;
+  &.collapsed {
+    width: 5%;
+    padding: 2em 0;
+    text-align: center;
+  }
+
+  .collapsed-btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    color: #2155bf;
+  }
+
+  &__content {
+    margin-top: 1em;
+    text-align: center;
+    
+    .profile-image {
+      width: 100px;
+      height: 100px;
+      overflow: hidden;
+      border-radius: 50%;
+      margin:0 auto;
+      border:5px solid #fff;
+      box-shadow: 0 3px 20px rgba(#2155bf,0.3);
+      
+      img {
+        width: 100%;
+      }
     }
+
+    .profile-info {
+        margin-top  : 2em;
+        font-size: 14px;
+        .info-item {
+            margin-bottom :1em;
+        }
+
+        .info-value {
+            color :   gray;
+        }
+        
+    }
+  }
 }
