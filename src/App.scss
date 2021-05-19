@@ -10,9 +10,29 @@
 .justify-center {
     justify-content: center;
 }
+.justify-start {
+    justify-content: flex-start;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+
 .items-center {
     align-items: center;
 }
+.items-start {
+    align-items: flex-start;
+}
+.items-end {
+    align-items: flex-end;
+}
+.flex-col  {
+    flex-direction: column;
+}
+.flex-row  {
+    flex-direction: row;
+}
+
 .capitalize {
     text-transform: capitalize;
 }

@@ -1,6 +1,90 @@
 .conversation {
-    background-color: #f3f6ff;
-    width:100%;
-    border-radius: 40px;
-    padding : 2em;
+  background-color: #f3f6ff;
+  width: 100%;
+  border-radius: 40px;
+  padding: 2em;
+}
+
+.conversation-section {
+  height: 100%;
+}
+.list-container {
+  flex: 1;
+  overflow: auto;
+  height: calc(100% - 100px);
+}
+.conversations-list {
+  overflow: auto;
+  min-height: 100%;
+  flex: 1;
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+    .coversation {
+      &-text {
+        background-color: #fff;
+        padding: 1rem;
+        margin-bottom: 0.6rem;
+        width: auto;
+        display: inline-block;
+        font-size: 14px;
+        line-height: 20px;
+        border-radius: 5px 20px 20px 20px;
+
+        span {
+          border-bottom: 2px solid #2155bf;
+        }
+      }
+      &-date {
+        color: #8a8a8a;
+        font-size: 12px;
+      }
+    }
+
+    &.sender {
+      .coversation {
+        &-text {
+          border-radius: 20px 5px 20px 20px;
+          background: #2155bf;
+          color: #fff;
+          text-align: right;
+        }
+        &-date {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+.conversation-message {
+  position: relative;
+  margin-top: 2em;
+  .message-text {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    outline: none;
+    height: 70px;
+    border-radius: 20px;
+  }
+  .send-message {
+    padding: 0;
+    background: none;
+    position: absolute;
+    top: 1rem;
+    bottom: auto;
+    right: 7%;
+    left: auto;
+    img {
+      width: 20px;
+      opacity: 0.5;
+    }
+  }
 }
